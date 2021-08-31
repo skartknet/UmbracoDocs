@@ -16,7 +16,7 @@ These packages are only available via NuGet, so ideally you’ll have your site 
 
 You’ll replace the default FileSystemProvider with the `UmbracoFileSystemProviders.Azure` provider when you install the Nuget package.  We recommend doing this first and verifying it behaves as expected before proceeding with the ImageProcessor setup.
 
-```PM> Install-Package UmbracoFileSystemProviders.Azure```
+```PM> Install-Package UmbracoFileSystemProviders.Azure -Version 1.2.0```
 
 The package is also available on [Our Umbraco](https://our.umbraco.com/projects/collaboration/umbracofilesystemprovidersazure/)
 The project source can be found here [https://github.com/JimBobSquarePants/UmbracoFileSystemProviders.Azure](https://github.com/JimBobSquarePants/UmbracoFileSystemProviders.Azure)
