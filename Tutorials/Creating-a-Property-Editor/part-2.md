@@ -98,6 +98,7 @@ namespace Umbraco.Cms.Core.PropertyEditors
             : base(dataValueEditorFactory)
         {
             _ioHelper = ioHelper;
+            _editorConfigurationParser = editorConfigurationParser;
         }
         protected override IConfigurationEditor CreateConfigurationEditor() => new SuggestionConfigurationEditor(_ioHelper, _editorConfigurationParser); 
     }
