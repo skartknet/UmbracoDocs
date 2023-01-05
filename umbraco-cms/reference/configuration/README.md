@@ -142,4 +142,4 @@ A complete list of all the configuration sections included in Umbraco, by defaul
 
 ## Configured by code
 
-* [FileSystemProviders](filesystemProviders.md)
+* [FileSystemProviders](filesystemproviders.md)
