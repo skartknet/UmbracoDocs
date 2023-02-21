@@ -309,21 +309,21 @@ This example does not use the aforementioned `BlogCommentSchema` class but rathe
 ```csharp
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using Umbraco.Cms.Infrastructure.Scoping;
+using Umbraco.Cms.Core.Scoping;
 using Umbraco.Cms.Web.Common.Controllers;
 namespace MyNamespace
 {
     public class BlogCommentsApiController : UmbracoApiController
     {
-        private readonly IScopeProvider _scopeProvider;
-        public BlogCommentsApiController(IScopeProvider scopeProvider)
+        private readonly ICoreScopeProvider _scopeProvider;
+        public BlogCommentsApiController(ICoreScopeProvider scopeProvider)
         {
             _scopeProvider = scopeProvider;
         }
         [HttpGet]
         public IEnumerable<BlogComment> GetComments(int umbracoNodeId)
         {
-            using var scope = _scopeProvider.CreateScope();
+            using var scope = _scopeProvider.CreateCoreScope();
             var queryResults = scope.Database.Fetch<BlogComment>("SELECT * FROM BlogComments WHERE BlogPostUmbracoId = @0", umbracoNodeId);
             scope.Complete();
             return queryResults;
