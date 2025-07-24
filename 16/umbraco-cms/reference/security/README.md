@@ -8,7 +8,7 @@ description: >-
 
 In this article, you will find everything you need regarding security within Umbraco.
 
-## [The Umbraco Trust Center (external)](https://umbraco.com/about-us/trust-center/)
+## [The Umbraco Trust Center (external)](https://umbraco.com/trust-center/)
 
 On our main website, we have a dedicated security section which provides all the details you need to know about security within the Umbraco CMS. This includes how to report a vulnerability.
 
